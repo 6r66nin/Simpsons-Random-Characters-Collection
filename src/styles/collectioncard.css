@@ -1,0 +1,48 @@
+.colection-card-div {
+  background-color: white;
+  border-radius: 18px;
+  border: 0.2rem solid black;
+  box-shadow: 4px 6px black;
+  max-width: 200px;
+  cursor: pointer;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.colection-card-div:hover {
+  transform: translate(-2px, -6px);
+  box-shadow: 6px 12px black;
+}
+
+.img-div {
+  background-color: red;
+  border-radius: 14px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 2px solid black;
+  height: 200px;
+}
+
+.img-div img {
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  filter: drop-shadow(8px 0 rgba(0, 0, 0, 1));
+}
+
+.shortinfo-div {
+  font-family: sans-serif;
+  padding: 15px 12px;
+  margin-bottom: 28px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.shortinfo-div h2 {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.shortinfo-div span {
+  font-weight: bold;
+}

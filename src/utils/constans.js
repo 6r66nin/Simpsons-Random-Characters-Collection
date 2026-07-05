@@ -1,0 +1,1 @@
+export const urlImgPrefix = "https://cdn.thesimpsonsapi.com/"

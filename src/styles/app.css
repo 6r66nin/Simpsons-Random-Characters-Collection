@@ -1,0 +1,128 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-shadow: 2px 1px rgba(226, 83, 83, 0.726);
+  font-size: 22px;
+  text-align: center;
+  word-spacing: -5px;
+  font-family: "Segoe UI";
+}
+
+header h1 {
+  font-weight: 1000;
+}
+
+.second-tittle {
+  font-size: 40px;
+  color: rgb(202, 73, 73);
+  text-shadow: 2px 1px rgb(0, 0, 0);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+main button {
+  padding: 14px;
+  box-shadow: 4px 6px 0 black;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgb(202, 73, 73);
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  width: 250px;
+  transition:
+    transform,
+    0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  cursor: pointer;
+}
+
+main button.loading {
+  transition:
+    transform,
+    0.1s ease,
+    box-shadow 0.1s ease;
+  background-color: rgba(95, 29, 29, 0.842);
+  transform: translateY(4px) translateX(2px);
+  box-shadow: 4px 2px 0 black;
+}
+
+.char-button-wrapper {
+  cursor: pointer;
+  padding: 6px;
+}
+
+.char-button-wrapper.disabled {
+  padding: 6px;
+}
+
+.char-button-wrapper:hover button:not(:disabled) {
+  transform: translateY(-2px) translateX(-2px);
+  box-shadow: 6px 8px 0 black;
+  background-color: rgb(197, 52, 52);
+}
+
+.collection {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 81vw;
+  gap: 10px;
+}
+
+.collection-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.collection-wrapper {
+  max-width: 90vw;
+  display: flex;
+  gap: 12px;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.collection-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.collection-wrapper::-webkit-scrollbar-track {
+  background: rgba(111, 179, 97, 0.726);
+  border-radius: 10px;
+}
+
+.collection-wrapper::-webkit-scrollbar-thumb {
+  background: #e9e060;
+  border-radius: 10px;
+  border: 1px solid #0000003d;
+}
+
+@media (max-width: 900px) {
+  .collection {
+    padding: 20px;
+    display: flex;
+    width: 100vw;
+    gap: 0;
+    align-items: center;
+  }
+
+  .collection-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    overflow-x: scroll;
+    padding: 20px;
+  }
+}

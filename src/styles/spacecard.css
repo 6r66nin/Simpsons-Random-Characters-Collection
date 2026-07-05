@@ -1,0 +1,23 @@
+.space-card-div {
+  background-color: rgb(249, 250, 223);
+  display: flex;
+  border-radius: 20px;
+  border: 0.5rem solid black;
+  box-shadow: 6px 8px 0 rgb(0, 0, 0);
+  width: clamp(800px, 62vw, 2000px);
+  height: clamp(400px, 60vh, 1000px);
+  place-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Segoe UI';
+}
+
+@media (max-width: 900px) {
+  .space-card-div {
+    width: clamp(200px, 80vw, 2000px);
+    height: clamp(400px, 60vh, 1000px);
+    font-size: 12px;
+  }
+}
