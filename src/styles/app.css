@@ -109,6 +109,10 @@ main button.loading {
   border: 1px solid #0000003d;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 @media (max-width: 900px) {
   .collection {
     padding: 20px;
@@ -118,11 +122,20 @@ main button.loading {
     align-items: center;
   }
 
+  section {
+    max-width: 80vw;
+  }
+
   .collection-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 16px 18px;
     overflow-x: scroll;
     padding: 20px;
+    max-width: 90vw;
+  }
+
+  main button {
+    user-select: none;
   }
 }
