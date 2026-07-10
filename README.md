@@ -7,3 +7,5 @@ This project is a small React application built with Vite that lets users discov
 - Display character details in a styled UI
 - Smooth scrolling when a new character appears
 
+# Vercel deploy
+-> https://simpsonsrandomcharacters.vercel.app/
